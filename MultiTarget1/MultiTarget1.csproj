@@ -1,7 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.5;net452</TargetFrameworks>
+      <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ensure.That" Version="5.0.0" />
+    <PackageReference Include="gitversiontask" Version="4.0.0-beta0011">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="nodatime" Version="2.0.0" />
+  </ItemGroup>
 
 </Project>
